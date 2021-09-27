@@ -5,6 +5,7 @@ const db = process.env.MONGO_URI
 
 const express = require('express')
 const mongoose = require('mongoose')
+const path = require('path')
 
 const app = express();
 
@@ -24,6 +25,17 @@ app.use('/api/auth', require('./routes/api/auth'))
 app.use('/api/checkout', require('./routes/api/checkout'))
 app.use('/api/orders', require('./routes/api/orders'))
 app.use('/api/reviews', require('./routes/api/reviews'))
+
+//Serve static assets if in production
+
+if(process.env.NODE_ENV === 'production') {
+    //Set static folder
+    app.use(express.static('client/build'))
+    
+    app.get('*', (req, re) => {
+        ress.sendFile(pathh.resolve(__dirname, 'client', 'buuild', 'index.html'))
+    })
+}
 
 const port = process.env.PORT || 5000
 

@@ -218,16 +218,16 @@
         border: none;
         font: inherit;
         display: block;
-        background-color: rgba(83, 111, 167, 0);
         text-decoration: none;
         padding-left: 0;
         padding: 1px 5px 4px 5px;
-        border-radius: 5px 0px 5px 0px;
         color: rgba(255, 255, 255, 1);
         opacity: 1;
+        background: none;
     }
 
     .headerNavbar-mainMenu > nav > ul > li > button:hover {
+        border-radius: 5px 0px 5px 0px;
         background-color: rgb(255, 255, 255, 0.2);
         border: 0px solid rgba(255, 255, 255, 0);
     }
