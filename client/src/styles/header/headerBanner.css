@@ -1,0 +1,159 @@
+/*HeaderBannerBackground*/
+
+.headerBanner-background {
+    background-color: rgb(255, 196, 0);
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    height: 55px;
+}
+
+.headerBanner-background-1, .headerBanner-background-3 {
+    background-color: rgba(95, 95, 95, 1);
+    
+}
+
+.headerBanner-background > div > div {
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 90%;
+}
+.headerBanner-background-1 {
+    clip-path: polygon(0 0, 0 100%, 70% 100%, 100% 0)
+}
+
+.headerBanner-background-1 > div {
+    padding: 2px 0px 2px 5px;
+    clip-path: polygon(0 0, 0% 100%, 65% 100%, 98% 0)
+}
+
+.headerBanner-background-3 {
+    display: flex;
+    justify-content: flex-end;
+    clip-path: polygon(0 0, 30% 100%, 100% 100%, 100% 0);
+}
+
+.headerBanner-background-3 > div {
+    clip-path: polygon(2% 0, 35% 100%, 100% 100%, 100% 0);
+}
+
+/*HeaderBannerContent*/
+
+.headerBanner-contentContainer {
+    display: grid;
+    grid-template-columns: 87.75px 1fr 87.75px;
+    position: absolute;
+    top: 0%;
+    height: 55px;
+    width: 100%;
+}
+
+/*HeaderBannerLogo*/
+
+.headerBanner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBanner-logo > button:hover {
+    background-color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+
+.headerBanner-logo > button > img {
+    text-align: center;
+    object-fit: cover;
+    width: 65px;
+}
+
+.headerBanner-logo > button {
+    display: flex;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    z-index: 1;
+    height: 39px;
+}
+
+/*HeaderBannerSearchbar*/
+
+.headerBanner-searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerBanner-searchBar > form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBanner-searchBar > form > input {
+    vertical-align: top;
+    height: 28px;
+    width: 90%;
+    border: solid black 1px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: var(--main-font);
+    font-size: 16px;
+    outline: none;
+}
+
+.headerBanner-searchBar > form > button {
+    position: relative;
+    vertical-align: top;
+    left: -1px;
+    top: 0px;
+    height: 28px;
+    width: 10%;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(95, 95, 95, 1);
+    border: solid black 1px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 16px;
+    min-width: 26px;
+    max-width: 52px;
+}
+
+.headerBanner-searchBar > form > button:hover {
+    background-color: rgb(112, 112, 112);
+    cursor: pointer;
+}
+
+/*HeaderBannerCart*/
+
+.headerBanner-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBanner-cart > button {
+    border: none;
+    background-color: rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.headerBanner-cart > button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.headerBanner-cart > button > i {
+    color: rgba(255, 255, 255, 1); 
+    font-size: 28px;
+    position: relative;
+    left: -5%;
+}

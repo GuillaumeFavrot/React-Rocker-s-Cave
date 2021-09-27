@@ -1,0 +1,46 @@
+.footerNavbar {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 28px;
+    font-size: 16px;
+    line-height: 0.8;
+    font-weight: bold;
+    color: white;
+}
+
+.footerNavbar-findUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(86, 114, 172, 1) 3%, rgba(62,83,126,1) 85%);
+    clip-path: polygon(10% 0, 3% 100%, 105% 100%, 95% 0%);
+}
+
+.footerNavbar-contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(151,164,212,1) 3%, rgba(83, 111, 167, 1) 85%);
+    clip-path: polygon(5% 0, -5% 100%, 105% 100%, 95% 0%);
+}
+
+.footerNavbar-socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(171,194,242,1) 3%, rgba(127,148,191,1) 85%);
+    clip-path: polygon(5% 0, -5% 100%, 97% 100%, 90% 0%);
+}
+
+.footerNavbar > div > span {
+    margin: 0;
+    padding: 3px 5px 3px 5px;
+}
+
+.footerNavbar > div > span:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 5px 0px 5px 0px;
+    cursor: pointer;
+}

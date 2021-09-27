@@ -1,0 +1,143 @@
+.footerBody-contentContainer {
+    height: 100%;
+    padding: 10px;
+    display: none;
+}
+
+.activeFooterContent {
+    display:block;
+}
+
+.footerBody-content {
+    background-color: rgba(201, 201, 201, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    min-height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerbody-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 3px;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(82, 107, 153, 0.3)
+}
+
+.footerbody-findUs-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+}
+
+.footerbody-socialMedia-container {
+    width: 100%;
+    text-align: center;
+}
+
+.footerbody-socialMedia-container > h3 {
+    margin-top: 30px;
+}
+
+.footerbody-socialMedia-container > p > a{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    width: 120px;
+    margin-left: 37%;
+    text-decoration: none;
+    color: white;
+}
+
+.footerbody-socialMedia-container > p > a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footerbody-socialMedia-container > p > a > img {
+    width: 25px;
+    margin-right: 15px;
+    background-color: inherit;
+}
+
+.footerBody-content > p {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footerBody-content > h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.footerBody-findUs {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(62,83,126,1) 86%);
+}
+
+.footerBody-contactUs {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(83, 111, 167, 1) 86%);
+}
+
+.footerBody-socialMedia {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(127,148,191,1) 86%);
+}
+
+.footerbody-contactUs-container > h3 {
+    margin-top: 30px;
+}
+
+.footerbody-contactUs-container > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 45px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.footerbody-contactUs-container > a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    text-decoration: underline;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 1250px) {
+
+    .footerBody-contentContainer {
+        display: block;
+    }
+
+    .footerBody {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footerBody-findUs {
+        padding-left: 25px;
+    }
+
+    .footerBody-socialMedia {
+        padding-right: 25px;
+    }
+}
+
+@media screen and (max-width: 424px) {
+
+    .footerbody-findUs-container {
+        position: relative;
+        left: 8px
+    }
+
+    .footerbody-address-container {
+        display: none;
+    }
+}

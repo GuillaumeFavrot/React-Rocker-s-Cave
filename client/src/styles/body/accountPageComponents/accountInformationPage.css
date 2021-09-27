@@ -1,0 +1,183 @@
+.accountInformationPage-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accountInformationPage-container.hidden {
+    display: none;
+}
+
+.accountInformationPage-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountInformationPage-section-header{
+    display: grid;
+    grid-template-columns: 35px 1fr 35px;
+    height: 35px;
+    background: linear-gradient(0deg, rgba(35,35,35,1) 1%, rgba(65,65,65,1) 15%, rgba(95,95,95,1) 99%);
+}
+
+.accountInformationPage-section-header:hover{
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(65,65,65,1) 1%, rgba(95,95,95,1) 15%, rgba(125,125,125,1) 99%);
+}
+
+.accountInformationPage-section-header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accountInformationPage-section-header > div > p{
+    margin: 0;
+    font-weight: bold;
+}
+
+.accountInformationPage-section-content{
+    background-color: rgba(35,35,35,1);
+}
+
+.accountInformationPage-section-content > div{
+    width: 100%;
+}
+
+/*Section specific CSS*/
+
+.userInfo-container {
+    height: 750px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+}
+
+.cart-container{
+    height: 620px;
+    width: 100%;
+    padding: 5px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+}
+
+.orders-container {
+    height:665px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 5px 5px 0px 5px;
+    transition: height 0.5s ease-in;
+}
+
+.adminOrdersList-container {
+    height:670px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 5px 5px 0px 5px;
+    transition: height 0.5s ease-in;
+}
+
+.orders-container > div.hidden{
+    display: none;
+}
+
+.adminOrdersList-container > div.hidden{
+    display: none;
+}
+
+.userReviews-container > div.hidden{
+    display: none;
+}
+
+.card-title.hidden {
+    display: none;
+}
+
+.userReviews-container{
+    height:670px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 5px 5px 0px 5px;
+    transition: height 0.5s ease-in;
+}
+
+.adminUserList-container {
+    height:670px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    padding: 5px 5px 0px 5px;
+    transition: height 0.5s ease-in;
+}
+
+.adminUserList-container > div.hidden{
+    display: none;
+}
+
+.adminNewProductForm-container {
+    height: 570px;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+}
+
+/*Utility*/
+
+.accountInformationPage-section-container.hidden {
+    display: none;
+}
+
+.accountInformationPage-section-content.shrinked {
+    height: 0px;
+    padding: 0px;
+    transition: height 0.5s ease-in;
+}
+
+.userslist-container.shrinked {
+    display: none;
+}
+
+.arrow-container {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.left {
+    transform: rotate(135deg);
+    position: relative;
+    left: 2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    position: relative;
+    right: 2px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    position: relative;
+    right: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    position: relative;
+    bottom: 2px;
+  }

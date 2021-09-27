@@ -1,0 +1,71 @@
+.productPage-summary-sidebar {
+    width:0%;
+    min-height: 500px;
+    background: linear-gradient(270deg, rgb(65, 65, 65) 17%, rgba(90,90,90,1) 69%, rgba(125, 125, 125, 1) 99%);
+    border-right: 1px solid rgb(35, 35, 35);
+    transition: width 1000ms ease-in-out 0ms;  
+}
+
+.productPage-summary-sidebar.active {
+    width:260px;
+    transition: width 1000ms ease-in-out 0ms; 
+}
+
+.productPage-summary-sidebar-filters {
+    opacity:0;
+    transition: opacity 500ms ease-in-out 0ms; 
+}
+
+.productPage-summary-sidebar-filters.active {
+    opacity:1;
+    transition: opacity 500ms ease-in-out 500ms; 
+}
+
+.productPage-summary-sidebar-filters > p {
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.2);
+}
+
+.productPage-summary-sidebar-filters > ul {
+    width: 100%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.productPage-summary-sidebar-filters  > ul > li {
+    width: 90%;
+    margin: 0;
+    margin-top: 5px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 17%, rgba(62,83,126,0.5) 69%, rgba(86, 114, 172, 0.5) 99%);
+    border-radius: 0px 20px 0px 0px;
+    transition:  all 250ms ease-in-out;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(180, 190, 204);
+}
+
+.productPage-summary-sidebar-filters  > ul > li:hover {
+    width:100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 16%, rgba(83,111,167,0.5) 69%, rgba(151,164,212,0.5) 99%);
+    transition:  all 250ms ease-in-out;
+}
+
+.productPage-summary-sidebar-filters  > ul > li > input:hover {
+    cursor: pointer;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 600px) {
+
+    .productPage-summary-sidebar {
+        width:200px;
+        min-height: 500px;
+        transition: width 1000ms ease-in-out 0ms;  
+    }
+
+    .productPage-summary-sidebar-filters {
+        opacity:1;
+        transition: opacity 1000ms ease-in-out 500ms;  
+    }   
+}

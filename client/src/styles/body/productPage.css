@@ -1,0 +1,30 @@
+.productPage {
+    display: flex;
+    background-color: rgba(95, 95, 95, 1);
+    width: 100%;
+}
+
+.productPage-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.productPage-container.hidden {
+    display: none;
+}
+
+
+.productPage.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+
+    .productPage-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5vw;
+        padding-left: 5vw;
+    }
+}

@@ -1,0 +1,19 @@
+.productPage-summary {
+    display:flex;
+    width:100%;
+    min-height: 500px;
+    background-color: rgba(45, 45, 45, 1);
+}
+
+.productPage-summary.hidden {
+    display:none;
+}
+
+.productPage-summary-cardContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}

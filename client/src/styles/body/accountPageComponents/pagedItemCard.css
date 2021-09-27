@@ -1,0 +1,68 @@
+.accountInformationPage-pagedItem-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgba(125, 125, 125, 1);
+    width: 100%;
+    border: 3px solid rgba(65, 65, 65, 1);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 16px;
+    z-index: -1;
+}
+
+.accountInformationPage-pagedItem-card:hover{
+    background-color:rgba(145, 145, 145, 1);
+    border: 3px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+
+.accountInformationPage-pagedItem-card-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.accountInformationPage-pagedItem-card-header > div > span {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+
+.accountInformationPage-pagedItem-card-content {
+    width: 100%;
+}
+
+.accountInformationPage-pagedItem-card-content > div {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+}
+
+.pagedItem-card-content.hidden {
+    display: none;
+}
+
+.accountInformationPage-pagedItem-card-content > div > span {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.accountInformationPage-pagedItem-card-content > div > span > p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+    margin: 0;
+    color: rgba(0, 0, 0, 1);
+}
+
+.accountInformationPage-pagedItem-card-content > div > span > div {
+    display: inline;
+}

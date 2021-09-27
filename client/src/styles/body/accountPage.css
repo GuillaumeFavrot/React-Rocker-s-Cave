@@ -1,0 +1,8 @@
+.accountPage-container {
+    display: flex;
+    background-color: rgba(45, 45, 45, 1);
+}
+
+.accountPage-container.hidden {
+    display: none;
+}

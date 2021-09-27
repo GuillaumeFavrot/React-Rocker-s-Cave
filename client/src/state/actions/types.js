@@ -1,0 +1,50 @@
+export const GET_PRODUCTS = 'GET_PRODUCTS';
+export const GET_PRODUCT_BY_ID = 'GET_PRODUCT_BY_ID';
+export const GET_PRODUCT_BY_ID_AND_UPDATE = 'GET_PRODUCT_BY_ID_AND_UPDATE';
+export const ADD_PRODUCT = 'ADD_PRODUCT';
+export const DELETE_PRODUCT = 'DELETE_PRODUCT';
+export const PRODUCTS_LOADING = 'PRODUCTS_LOADING';
+export const NEW_REQUEST = 'NEW_REQUEST';
+export const CUSTOM_REQUEST = 'CUSTOM_REQUEST';
+export const MODIFY_REQUEST = 'MODIFY_REQUEST';
+export const MODIFY_SORTING = 'MODIFY_SORTING';
+export const MODIFY_APP_VIEW = 'MODIFY_APP_VIEW';
+
+//Auth state actions
+export const USER_LOADING = "USER_LOADING";
+export const USER_LOADED = "USER_LOADED";
+export const AUTH_ERROR = "AUTH_ERROR";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const GET_ERRORS = "GET_ERRORS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
+
+//Users actions
+export const GET_USERS = "GET_USERS"
+export const DELETE_USER = "DELETE_USER"
+export const USERS_LOADING = 'USERS_LOADING';
+export const UPDATE_USER_INFO = 'UPDATE_USER_INFO'
+export const GET_USER_BY_ID = "GET_USER_BY_ID"
+
+//Checkout actions
+export const GET_CHECKOUT_STATUS = "GET_CHECKOUT_STATUS"
+export const RESET_CHECKOUT_STATUS = "RESET_CHECKOUT_STATUS"
+
+//Orders actions
+export const CREATE_ORDER = "CREATE_ORDER"
+export const MODIFY_ORDER = "MODIFY_ORDER"
+export const GET_ORDERS = "GET_ORDERS"
+export const ORDERS_LOADING = "ORDERS_LOADING"
+export const DELETE_ORDER = "DELETE_ORDER"
+export const GET_ORDER_BY_ID = "GET_ORDER_BY_ID"
+
+//Reviews actions
+export const CREATE_REVIEW = "CREATE_REVIEW"
+export const MODIFY_REVIEW = "MODIFY_REVIEW"
+export const GET_REVIEWS = "GET_REVIEWS"
+export const REVIEWS_LOADING = "REVIEWS_LOADING"
+export const DELETE_REVIEW = "DELETE_REVIEW"
+export const GET_REVIEW_BY_ID = "GET_REVIEW_BY_ID"

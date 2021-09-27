@@ -1,0 +1,135 @@
+
+.productPage-header {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height: 100px;
+    background-color: rgba(65, 65, 65, 1);
+}
+
+.productPage-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    height: 99px;
+}
+
+.productPage-header-title > h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.productPage-header-btns {
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    top: -26px;
+    width:100%;
+    height: 1px;
+}
+
+.productPage-header-btns.hidden {
+    display: none;
+}
+
+.productPage-header-btn-filters {
+    position: relative;
+    height: 20px;
+    left: 7px;
+}
+
+.productPage-header-sorting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.productPage-header-btn-sorting {
+    width: 70px;
+    position: relative;
+    height: 20px;
+    right: 7px;
+    margin-bottom: 12px;
+}
+
+.productPage-header-sorting > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    width: 170px;
+    border-radius: 0px 0px 0px 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top:1px;
+    list-style: none;
+    padding-bottom: 5px;
+    background-color: rgba(62, 83, 126, 1);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+    border: 3px solid rgb(46, 46, 46)
+}
+
+.productPage-header-sorting > ul.active {
+    transform: scale(1, 1);
+}
+
+.productPage-header-sorting > ul > li > button.active {
+    opacity: 1;
+    transition: opacity 50ms ease-in-out;
+}
+
+.productPage-header-sorting > ul > li {
+    display: block;
+    width:100%;
+    padding: 5px 5px 0px 5px;
+}
+
+.productPage-header-sorting > ul > li > button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    display: block;
+    width:100%;
+    background: linear-gradient(0deg, rgba(61, 61, 61, 0.6) 16%, rgba(127,148,191,0.6) 69%, rgba(171,194,242,0.6) 99%);
+    text-decoration: none;
+    padding: 2px 5px 2px 5px;
+    border-radius: 0px 5px 0px 5px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out 50ms;
+    border: 1px solid rgb(46, 46, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.productPage-header-sorting > ul > li > button:hover {
+    background: linear-gradient(0deg, rgba(104, 104, 104, 0.6) 16%, rgba(158, 184, 236, 0.6) 69%, rgba(191, 211, 255, 0.6) 99%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 600px) {
+    
+    .btn-container {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .productPage-header-btns {
+        display: flex;
+        justify-content: flex-end;
+        width:100%;
+        height: 1px;
+    }
+
+    .productPage-header-btn-filters {
+        display: none;
+    }
+
+}

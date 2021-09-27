@@ -1,0 +1,235 @@
+/*headerNavbarBackground*/
+
+.headerNavbar-background {
+    position: absolute;
+    top: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(127,148,191,1) 69%, rgba(171,194,242,1) 99%);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+    height: 28px;
+}
+
+.headerNavbar-background > div {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(83,111,167,1) 69%, rgba(151,164,212,1) 99%);
+}
+
+.headerNavbar-background > div > div {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 17%, rgba(62,83,126,1) 69%, rgba(86, 114, 172, 1) 99%);
+    width:90%;
+    height: 100%;
+}
+
+.headerNavbar-background-1 {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 80% 0);
+}
+
+.headerNavbar-background-1 > div {
+    clip-path: polygon(0 0, 0 100%, 97% 100%, 75% 0);
+}
+
+.headerNavbar-background-3 {
+    display: flex;
+    justify-content: flex-end;
+    clip-path: polygon(20% 0, 0 100%, 100% 100%, 100% 0);
+}
+
+.headerNavbar-background-3 > div {
+    clip-path: polygon(25% 0, 3% 100%, 100% 100%, 100% 0%);
+}
+
+/*headerNavbarContent*/
+
+.headerNavbar-contentContainer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 28px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 87.75px 1fr 87.75px;
+    font-size: 16px;
+    line-height: 0.8;
+}
+
+/*Hamburger menu*/
+
+.headerNavbar-hamburgerMenu {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+}
+
+.headerNavbar-nav-toggle {
+    display: none;
+}
+
+.headerNavbar-nav-toggle-label > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 1px;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 1);
+}
+
+.headerNavbar-nav-toggle-label > span:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.headerNavbar-nav-toggle-label > span > i {
+    position: relative;
+    font-size: 20px;
+}
+
+/*Main menu*/
+
+.headerNavbar-mainMenu {
+    position: relative;
+    background-color: rgba(62, 83, 126, 1);
+    top: 28px;
+    left: -87.75px;
+    width: 140px;
+    border-radius: 0px 0px 10px 0px;
+    background-color: rgba(62, 83, 126, 1);
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 200ms ease-in-out;
+    border: 3px solid rgb(46, 46, 46);
+}
+
+.headerNavbar-mainMenu.active {
+    transform: scale(1, 1);
+}
+
+.headerNavbar-mainMenu-btn.active {
+    opacity: 1;
+    transition: opacity 50ms ease-in-out;
+}
+
+.headerNavbar-mainMenu > nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.headerNavbar-mainMenu > nav > ul > li {
+    display: block;
+    padding: 5px 5px 0px 5px;
+}
+
+.headerNavbar-mainMenu > nav > ul > li > button {
+    padding: 0;
+    border: none;
+    display: block;
+    font: inherit;
+    width:100%;
+    background: linear-gradient(0deg, rgba(61, 61, 61, 0.6) 16%, rgba(127,148,191,0.6) 69%, rgba(171,194,242,0.6) 99%);
+    text-decoration: none;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px 0px 5px 0px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out 50ms;
+    border: 1px solid rgb(46, 46, 46);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headerNavbar-mainMenu > nav > ul > li > button:hover {
+    background: linear-gradient(0deg, rgba(104, 104, 104, 0.6) 16%, rgba(158, 184, 236, 0.6) 69%, rgba(191, 211, 255, 0.6) 99%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/*Account management section*/
+
+.headerNavbar-accountManagement {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 7px;
+    margin-bottom: 3px;
+}
+
+.headerNavbar-accountManagement > button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    padding: 0 5px 4px 5px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.headerNavbar-accountManagement > button:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 5px 0px 5px 0px;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 600px) {
+
+    .headerNavbar-nav-toggle-label > span {
+        display:none;
+    }
+
+    .headerNavbar-mainMenu {
+        display: block;
+        position: relative;
+        transform: scale(1, 1);
+        top: 0%;
+        left:0%;
+        width: 100%;
+        padding-top: 6px;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+
+    .headerNavbar-mainMenu > nav > ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 0;
+    }
+    
+    .headerNavbar-mainMenu > nav > ul:first-child {
+        margin-left: 4.5vw;
+    }
+
+    .headerNavbar-mainMenu > nav > ul:last-child {
+        margin-right: 4.5vw;
+    }
+
+    .headerNavbar-mainMenu > nav > ul > li {
+        padding: 0;
+    }
+
+    .headerNavbar-mainMenu > nav > ul > li > button {
+        padding: 0;
+        border: none;
+        font: inherit;
+        display: block;
+        background-color: rgba(83, 111, 167, 0);
+        text-decoration: none;
+        padding-left: 0;
+        padding: 1px 5px 4px 5px;
+        border-radius: 5px 0px 5px 0px;
+        color: rgba(255, 255, 255, 1);
+        opacity: 1;
+    }
+
+    .headerNavbar-mainMenu > nav > ul > li > button:hover {
+        background-color: rgb(255, 255, 255, 0.2);
+        border: 0px solid rgba(255, 255, 255, 0);
+    }
+    
+}

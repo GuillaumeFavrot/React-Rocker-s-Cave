@@ -1,0 +1,51 @@
+.accountInformationPage-newProductForm {
+    padding: 0px 15px 0px 15px;
+}
+
+.accountInformationPage-newProductForm > div {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin-bottom: 10px;
+}
+
+.newProductForm-button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    grid-column: span 2;
+    padding: 0px 15px 10px 0px;
+}
+
+.submit {
+    margin-left: 10px; 
+}
+
+.accountInformationPage-newProductForm-header {
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.formInput {
+    color: white;
+    border: 1px solid black;
+    border: 3px;
+    background-color: rgb(65, 65, 65);
+    
+}
+
+/*Section specific styles*/
+
+.newProductForm-productType {
+    margin-top: 10px;
+}
+
+
+/*Utility*/
+
+.accountInformationPage-newProductForm > div.hidden {
+    display: none;
+}

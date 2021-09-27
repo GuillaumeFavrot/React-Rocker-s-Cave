@@ -1,0 +1,158 @@
+.PagedItemOverview-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.PagedItemOverview-content-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.order.hidden {
+    display: none;
+}
+
+.user.hidden {
+    display: none;
+}
+
+.review.hidden {
+    display: none;
+}
+
+.order-status.hidden {
+    display: none;
+}
+
+.order-status.green {
+    color: rgb(29, 194, 29);
+}
+
+.order-status.orange {
+    color: orange;
+}
+
+.order-status.yellow {
+    color: yellow;
+}
+
+.PagedItemOverview-order-status-new.hidden {
+    display: none;
+}
+
+.PagedItemOverview-content-container > h5 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 0;
+}
+
+.PagedItemOverview-content-container > h5 > span {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.PagedItemOverview-content-container > div > h6 {
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px 0px 10px 0px;
+    margin: 5px 0px 5px 0px;
+    font-size: 18px;
+}
+
+.PagedItemOverview-buttons {
+    text-align: center;
+}
+
+/*Orders*/
+
+.PagedItemOverview-content-container > div > div > p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline;
+}
+
+.PagedItemOverview-content-container > div {
+    width: 100%;
+}
+
+.PagedItemOverview-order-status-current {
+   margin-bottom: 5px; 
+}
+ 
+.PagedItemOverview-order-status-new > select {
+    color: white;
+    border: 1px solid black;
+    background-color: rgb(65, 65, 65);
+}
+
+.PagedItemOverview-order-total {
+    margin-top: 5px;
+}
+
+/* Reviews */
+
+.PagedItemOverview-review-product > div {
+    display: flex;
+}
+
+.PagedItemOverview-review-product > div > img{
+    height: 60px;
+    width: 60px;   
+    border: 3px solid rgba(65, 65, 65, 1);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.PagedItemOverview-review-product > div > div > div > p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline;
+}
+
+.PagedItemOverview-review-currentRate > div {
+    display: inline;
+}
+
+.PagedItemOverview-review-newRate > div {
+    display: inline;
+}
+
+.PagedItemOverview-review-newTitle {
+    display: flex;
+    height: 20px;
+}
+
+.PagedItemOverview-review-newTitle > span {
+    width: 90px;
+}
+
+.PagedItemOverview-review-newTitle > input {
+    width: 100%;
+}
+
+.PagedItemOverview-review-newComment {
+    display: flex;
+}
+
+.PagedItemOverview-review-newComment > span {
+    width: 150px;
+}
+
+.PagedItemOverview-review-newComment > textarea {
+    width: 100%;
+}
+
+.PagedItemOverview-review-updateDate {
+    margin-bottom: 10px;
+}
+
+.discard {
+    margin-right: 25px;
+}

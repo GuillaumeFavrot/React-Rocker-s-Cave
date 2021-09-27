@@ -1,0 +1,110 @@
+/*FooterBannerBackground*/
+
+.footerBanner-background {
+    background-color: rgb(255, 196, 0);
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    height: 55px;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.footerBanner-background-1, .footerBanner-background-3 {
+    background-color: rgba(95, 95, 95, 1);
+}
+
+.footerBanner-background > div > div {
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 90%;
+}
+.footerBanner-background-1 {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 70% 0)
+}
+
+.footerBanner-background-1 > div {
+    clip-path: polygon(0 0, 0 100%, 98% 100%, 65% 0)
+}
+
+.footerBanner-background-3 {
+    display: flex;
+    justify-content: flex-end;
+    clip-path: polygon(30% 0, 0 100%, 100% 100%, 100% 0%);
+}
+
+.footerBanner-background-3 > div {
+    clip-path: polygon(35% 0, 2% 100%, 100% 100%, 100% 0)
+}
+
+/*FooterBannerContent*/
+
+.footerBanner-contentContainer {
+    display: grid;
+    grid-template-columns: 87.75px 1fr 87.75px;
+    height: 55px;
+    width: 100%;
+    line-height: 0.8;
+}
+
+/*FooterBannerLogo*/
+
+.footerBanner-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBanner-logo > button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    z-index: 1;
+    height: 39px;
+    padding: 0px 0px 5px 0px;
+}
+
+.footerBanner-logo > button:hover {
+    background-color: rgb(112, 112, 112);
+    cursor: pointer;
+
+}
+
+.footerBanner-logo > button > img{
+    width: 65px;
+    z-index: 1;
+}
+
+/*FooterBannerLegalMantions*/
+
+.footerBanner-legalMentions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+    font-size: 16px;
+    padding: 5px 0 5px 0;
+}
+
+.footerBanner-legalMentions > p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.footerBanner-legalMentions > span > a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 0 5px 0 5px;
+}
+
+.footerBanner-legalMentions > span > a:hover {
+    background-color: rgba(134, 134, 134, 0.4);
+    border-radius: 5px 0px 5px 0px;
+    cursor: pointer;
+}

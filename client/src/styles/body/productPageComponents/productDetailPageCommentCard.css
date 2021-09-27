@@ -1,0 +1,27 @@
+.productPage-detail-commentCard-container{
+    background-color:rgba(65, 65, 65, 1);
+    border: 3px solid rgba(95, 95, 95, 1);
+    border-radius: 5px;
+    padding: 5px 5px 0px 5px;
+    margin-bottom: 5px;
+}
+
+.productPage-detail-comment-title {
+    margin-left: 5px;
+}
+
+.productPage-detail-comment-UsernameAndDate{
+    font-size: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.productPage-detail-comment-UsernameAndDate > span{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.productPage-detail-comment-body {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

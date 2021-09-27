@@ -1,0 +1,78 @@
+.loginPage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0px 200px 0px;
+}
+
+.loginPage-container.hidden {
+    display: none;
+}
+
+.loginPage-form-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(35, 35, 35, 1);
+    border: 3px solid rgba(95, 95, 95, 1);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.loginPage-form-container > p {
+    text-align: center;
+    margin:0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.loginPage-form-container > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.loginPage-form-container > form > p {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    font-weight: bold;
+}
+
+.loginPage-form-container > form > input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid rgba(35, 35, 35, 1);
+    background-color:rgba(135, 135, 135, 1);
+    border-radius: 5px;
+}
+
+/*To registration page button*/
+
+.loginPage-toRegistrationPage-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgba(95, 95, 95, 1);
+    background-color:rgba(35, 35, 35, 1);
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.loginPage-toRegistrationPage-container > p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.loginPage-toRegistrationPage-container > button {
+    margin-left: 70px;
+    margin-right: 70px;
+}

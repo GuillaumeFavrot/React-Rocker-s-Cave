@@ -1,0 +1,124 @@
+/*HomePage Cards*/
+
+.homePage-card {
+    width: 100%;
+    min-height: 130px;
+    max-height: 350px;
+}
+
+.homePage-card.extended {
+    height: 350px;
+    transition: height 1000ms ease-in-out 0ms;
+}
+
+.homePage-card.shrinked {
+    height: 130px;
+    transition: height 1000ms ease-in-out 0ms;
+}
+
+.homePage-card-contentContainer {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+    background-color: rgba(35, 35, 35, 0.8);
+    border-radius: 25px 0px 25px 0px;
+}
+
+.homePage-card-cardContent{
+    width: 100%;  
+}
+
+.homePage-card-cardTitle {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.homePage-card-cardDescription-container.hidden {
+    display:none;
+}
+
+.homePage-card-cardDescription {
+    opacity: 0;
+    margin: 0px 10px 10px 10px;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: opacity 500ms ease; 
+}
+
+.homePage-card-cardDescription.visible {
+    opacity: 1;
+    transition: opacity 500ms ease 1000ms; 
+}
+
+.homePage-card-cardData {
+    height: 200px;
+    margin: 0px 10px 10px 10px;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.homePage-card-cardText {
+    opacity: 0;
+}
+
+.homePage-card-cardText.visible {
+    opacity: 1;
+    transition: opacity 1000ms ease;
+}
+
+.homePage-card-cardData.hidden {
+    display: none;
+}
+
+.homePage-card-btn-container {
+    position:absolute;
+    bottom: 27px;
+    padding: 0px 5px 5px 0px;
+}
+
+.featured-products-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.featured-products-cards.hidden {
+    display: none;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 600px) {
+
+    .homePage-card {
+        min-height: 350px;
+        max-height: 350px;
+    }
+    
+    .homePage-card.extended {
+        width: 100%;
+        transition: width 1000ms ease-in-out 0ms;
+    }
+    
+    .homePage-card.shrinked {
+        width: 180px;
+        transition: width 1000ms ease-in-out 0ms;
+        
+    }
+
+    .featured-products-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+}
