@@ -204,4 +204,30 @@
     .cart-container{
         height: 798px;
     }
+
+    .userReviews-container{
+        height: 685px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .cart-container{
+        height: 738px;
+    }
+
+    .orders-container {
+        height:855px;
+    }
+
+    .userReviews-container{
+        height:720px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .userReviews-container{
+        height:800px;
+    }
 }
