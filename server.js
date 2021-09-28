@@ -3,7 +3,7 @@ if(process.env.NODE_ENV !== 'production') {
 }
 
 const db = process.env.MONGO_URI
-console.log(db)
+
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
@@ -15,7 +15,7 @@ app.use(express.json());
 
 //Connect to Mongo
 mongoose
-    .connect("mongodb+srv://Guillaume:guigui845@cluster0.qicsa.mongodb.net/TheRockersCave?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
+    .connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
     .then(() => console.log('MongoDB Connected...'))
     .catch((err) => console.log(err))
 
