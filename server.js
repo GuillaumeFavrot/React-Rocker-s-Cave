@@ -1,6 +1,6 @@
-if(process.env.NODE_ENV !== 'production') {
-    require('dotenv').config({path: '/.env'})
-}
+
+    require('dotenv').config({path: './.env'})
+
 const db = process.env.MONGO_URI
 
 const express = require('express')
