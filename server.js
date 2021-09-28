@@ -3,7 +3,7 @@ if(process.env.NODE_ENV !== 'production') {
 }
 
 const db = process.env.MONGO_URI
-
+console.log(db)
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
