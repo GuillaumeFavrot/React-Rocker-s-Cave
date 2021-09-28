@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import { ordersActionCreators, reviewsActionCreators } from '../../../state/index'
+import { ordersActionCreators, reviewsActionCreators, usersActionCreators } from '../../../state/index'
 
 import './../../../styles/body/accountPageComponents/pagedItemOverview.css'
 
@@ -22,8 +22,8 @@ function PagedItemOverview({listItemViewToggle, listItemOverviewToogle}) {
     const dispatch = useDispatch()
         
     const {modifyReview} = bindActionCreators(reviewsActionCreators, dispatch)
-
-    const {modifyOrder} = bindActionCreators(ordersActionCreators, dispatch)
+    const {deleteUser} = bindActionCreators(usersActionCreators, dispatch)
+    const {modifyOrder, deleteOrder} = bindActionCreators(ordersActionCreators, dispatch)
     
 
     //Displayed item local state
@@ -198,9 +198,26 @@ function PagedItemOverview({listItemViewToggle, listItemOverviewToogle}) {
         }
     }, [state.appView])
 
+    //Card deletion function
+
+    const cardDeletionRequest = (e) => {
+        e.stopPropagation()
+        if(displayedUser.userType) {
+            deleteUser(displayedUser._id)
+            onReturnClick()
+        }
+        else if(displayedOrder.itemsList) {
+            deleteOrder(displayedOrder._id)
+            onReturnClick()
+        } 
+    }
+
     return (
         <div className="PagedItemOverview-container">
-            <button className="btn btn-aligned-top-left-square" onClick={() => onReturnClick()}>Back to the list</button>
+            <div className="PagedItemOverview-topButtons">
+                <button className="btn btn-aligned-top-left-square" onClick={() => onReturnClick()}>Back to the list</button>
+                <button className={state.auth.user.userType === "customer" ? "btn btn-red btn-aligned-top-right-square hidden" : "btn btn-red btn-aligned-top-right-square"} onClick = {(e) => cardDeletionRequest(e)}>Delete</button> 
+            </div>
             <div className = { pageToDisplay === "orders" ? "PagedItemOverview-content-container order" : "PagedItemOverview-content-container order hidden"}>
                 <h5><span>Order ID N°: </span>{displayedOrder._id}</h5>
                 <div className="PagedItemOverview-order-status">

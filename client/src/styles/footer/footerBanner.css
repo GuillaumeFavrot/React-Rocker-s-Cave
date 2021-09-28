@@ -45,6 +45,7 @@
     height: 55px;
     width: 100%;
     line-height: 0.8;
+    color: rgb(46, 59, 88);
 }
 
 /*FooterBannerLogo*/
@@ -99,7 +100,7 @@
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgb(46, 59, 88);
     padding: 0 5px 0 5px;
 }
 

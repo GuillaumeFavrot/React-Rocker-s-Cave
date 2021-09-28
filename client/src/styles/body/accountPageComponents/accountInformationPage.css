@@ -180,4 +180,28 @@
     transform: rotate(45deg);
     position: relative;
     bottom: 2px;
-  }
+}
+
+/*Media query*/
+
+@media screen and (max-width: 398px) {
+
+    .adminOrdersList-container {
+        height:760px;
+    }
+
+    .orders-container {
+        height:760px;
+    }
+
+    .cart-container{
+        height: 680px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+
+    .cart-container{
+        height: 798px;
+    }
+}

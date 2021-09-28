@@ -88,7 +88,7 @@ function HeaderBanner() {
                 </div>
                 <div className="headerBanner-searchBar">
                     <form action="POST">
-                        <input type="text" name="search" placeholder="What are you looking for?" value={requestedString} onChange={(e) => onChange(e)}/>
+                        <input type="text" name="search" value={requestedString} onChange={(e) => onChange(e)}/>
                         <button type="submit" onClick = {(e) => onClick(e)}><i className="fa fa-search"></i></button>
                     </form>
                 </div>

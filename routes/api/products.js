@@ -34,7 +34,6 @@ router.get('/', async (req, res) => {
             processedQuery.onSale = {$in: true}
         } else {};
     try{
-        console.log(processedQuery)
         const products = await Products.find(processedQuery).sort({effectivePrice: sorting})
         res.json(products)
     }

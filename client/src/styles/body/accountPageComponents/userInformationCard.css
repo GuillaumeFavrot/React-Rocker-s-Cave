@@ -5,13 +5,15 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
 
+.userInfoSubmit{
+    display: block;
 }
 
 .userInfomationCard-sectionContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -24,8 +26,6 @@
 }
 
 .userInfomationCard-sectionContent {
-    display: grid;
-    grid-template-columns: 140px 1fr 110px;
     width: 100%;
     padding: 0px 10px 0px 10px;
 }

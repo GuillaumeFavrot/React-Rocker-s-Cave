@@ -2,7 +2,6 @@ if(process.env.NODE_ENV !== 'production') {
     require('dotenv').config({path: './.env'})
 }
 
-
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
@@ -15,17 +14,11 @@ app.use(express.json());
 //Connect to Mongo
 
 let db = process.env.MONGO_URI
-console.log(db)
 
-try {
-    mongoose
+mongoose
     .connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
     .then(() => console.log('MongoDB Connected...'))
-    .catch((err) => console.log("ERROR", err))
-} catch(e) {
-    console.log(e)
-}
-
+    .catch((err) => console.log(err))
 
 //Use routes
 app.use('/api/products', require('./routes/api/products'))

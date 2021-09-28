@@ -144,19 +144,27 @@ function UserInformationCard() {
             <div className ="userInfomationCard-sectionContainer userNameSection">
                 <p className="userInfomationCard-sectionHeader">Username</p>
                 <p className={state.error.msg.msg === "A user is already registered with this Username" ? "error-message" : "error-message hidden"}>{state.error.msg.msg}</p>
-                <div className="userInfomationCard-sectionContent">
+                <div className="userInfomationCard-sectionContent multipleLineForm">
                     <span>Current username : </span>
                     <input className="formInput" name="userName" value={newUsername.userName} onChange={(e)=> usernameChange(e)} placeholder={user.userName}></input>
-                    <button className="btn btn-green btn-aligned-top-right userInfoSubmit" onClick={() => onNewUsernameSubmit()}>Update</button>
+                    <div>
+                        <div>
+                            <button className="btn btn-green btn-aligned-top-right userInfoSubmit" onClick={() => onNewUsernameSubmit()}>Update</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className ="userInfomationCard-sectionContainer emailSection">
                 <p className="userInfomationCard-sectionHeader">E-mail</p>
                 <p className={state.error.msg.msg === "A user is already registered with this E-mail" ? "error-message" : "error-message hidden"}>{state.error.msg.msg}</p>
-                <div className="userInfomationCard-sectionContent">
+                <div className="userInfomationCard-sectionContent multipleLineForm">
                     <span>Current E-mail : </span>
                     <input className="formInput" name="email" value={newEmail.email} onChange={(e)=> emailChange(e)} placeholder={user.email}></input>
-                    <button className="btn btn-green btn-aligned-top-right userInfoSubmit" onClick={() => onNewEmailSubmit()}>Update</button>
+                    <div>
+                        <div>
+                            <button className="btn btn-green btn-aligned-top-right userInfoSubmit" onClick={() => onNewEmailSubmit()}>Update</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className ="userInfomationCard-sectionContainer shippingInformationSection">
