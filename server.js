@@ -2,7 +2,6 @@ if(process.env.NODE_ENV !== 'production') {
     require('dotenv').config({path: './.env'})
 }
 
-const db = process.env.MONGO_URI
 
 const express = require('express')
 const mongoose = require('mongoose')
@@ -14,6 +13,10 @@ const app = express();
 app.use(express.json());
 
 //Connect to Mongo
+
+let db = process.env.MONGO_URI
+console.log(db)
+
 mongoose
     .connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
     .then(() => console.log('MongoDB Connected...'))
