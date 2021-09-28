@@ -17,10 +17,15 @@ app.use(express.json());
 let db = process.env.MONGO_URI
 console.log(db)
 
-mongoose
+try {
+    mongoose
     .connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
     .then(() => console.log('MongoDB Connected...'))
-    .catch((err) => console.log(err))
+    .catch((err) => console.log("ERROR", err))
+} catch(e) {
+    console.log(e)
+}
+
 
 //Use routes
 app.use('/api/products', require('./routes/api/products'))
