@@ -66,7 +66,12 @@ function HomePageCard({cardContent, toogleExtenssion}) {
     const { width } = useWindowDimensions();
 
     useEffect(() => {
-        if (width <= 550) {
+        if (width <= 320) {
+            setNumberOfProducts(1)
+            let newArray = products.slice(0, numberOfProducts)   
+            setProductsToDisplay(newArray)
+        } 
+        else if (width <= 550) {
             setNumberOfProducts(2)
             let newArray = products.slice(0, numberOfProducts)   
             setProductsToDisplay(newArray)
@@ -110,8 +115,9 @@ function HomePageCard({cardContent, toogleExtenssion}) {
                     </div>
                     <div className={cardContentDisplay === true ? "homePage-card-cardData" : "homePage-card-cardData hidden"}>
                         <div className={cardContentVisibility === true ? "homePage-card-cardText visible" : "homePage-card-cardText"}>
-                            {cardContent.cardData}
-                        
+                            <div className ="text">
+                                {cardContent.cardData}
+                            </div>
                             <div className={cardContent.cardTitle === "Featured Sales" ? "featured-products-cards" : "featured-products-cards hidden"}>
                                 {productsToDisplay.map((products)=>(
                                 <ProductCard key={products._id} products = {products}/>    

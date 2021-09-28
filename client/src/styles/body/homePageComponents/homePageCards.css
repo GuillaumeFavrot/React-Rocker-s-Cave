@@ -58,11 +58,15 @@
 
 .homePage-card-cardData {
     height: 200px;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 0px 10px 0px;
     font-weight: 100;
     font-size: 16px;
     text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text {
+    margin: 0px 10px 10px 10px;
 }
 
 .homePage-card-cardText {

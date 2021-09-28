@@ -51,7 +51,7 @@
     min-height: 180px;
     width:100%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding:25px;
+    padding:25px 1vw 25px 1vw;
 }
 
 .reverb {
@@ -84,7 +84,7 @@
         min-height: 250px;
         width:100%;
         background-color: rgba(0, 0, 0, 0.5);
-        padding:25px;
+        padding:25px 1vw 25px 1vw;
     }
   
     .aligned-right-flex {

@@ -14,7 +14,7 @@ app.use(express.json());
 
 //Connect to Mongo
 mongoose
-    .connect("mongodb+srv://Guillaume:guigui845@cluster0.qicsa.mongodb.net/TheRockersCave?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
+    .connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false })
     .then(() => console.log('MongoDB Connected...'))
     .catch((err) => console.log(err))
 
